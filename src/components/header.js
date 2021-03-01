@@ -1,28 +1,19 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import twhead from './TWHeader';
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    className="p-3 bg-purple-800"
   >
     <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+      className="m-0 m-auto max-w-4xl p-3"
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 className="m-0">
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+          className="text-white"
         >
           {siteTitle}
         </Link>
